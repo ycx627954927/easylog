@@ -1,4 +1,4 @@
-// A simple logger for Go.
+// Package easylog provide a simple logger for Go, support out level.
 package easylog
 
 import (
@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+// Log output level.
 const (
 	Ldebug = iota
 	Linfo
@@ -226,7 +227,7 @@ func (l *Logger) Errorf(format string, v ...interface{}) {
 	l.Output(2, fmt.Sprintf(format, v...), Lerror)
 }
 
-// Panicf uses fmt.Sprintln to construct and log a message, then panics.
+// Panic uses fmt.Sprintln to construct and log a message, then panics.
 func (l *Logger) Panic(v ...interface{}) {
 	s := fmt.Sprintln(v...)
 	l.Output(2, s, Lpanic)
