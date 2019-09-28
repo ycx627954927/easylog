@@ -1,6 +1,7 @@
 # Easylog
 
 A simple logger for Go, support output level.
+
 [![Build Status](https://travis-ci.org/winterssy/easylog.svg?branch=master)](https://travis-ci.org/winterssy/easylog) [![Go Report Card](https://goreportcard.com/badge/winterssy/easylog)](https://goreportcard.com/report/winterssy/easylog) [![GoDoc](https://godoc.org/github.com/winterssy/easylog?status.svg)](https://godoc.org/github.com/winterssy/easylog) [![License](https://img.shields.io/github/license/winterssy/easylog.svg)](LICENSE)
 
 ## Install
