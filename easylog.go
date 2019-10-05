@@ -1,4 +1,3 @@
-// Package easylog provides a simple logger for Go, support out level.
 package easylog
 
 import (
