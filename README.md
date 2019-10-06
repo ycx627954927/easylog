@@ -2,7 +2,7 @@
 
 A simple logger for Go, support output level.
 
-[![Build Status](https://www.travis-ci.com/winterssy/easylog.svg?branch=master)](https://www.travis-ci.com/winterssy/easylog) [![Go Report Card](https://goreportcard.com/badge/winterssy/easylog)](https://goreportcard.com/report/winterssy/easylog) [![GoDoc](https://godoc.org/github.com/winterssy/easylog?status.svg)](https://godoc.org/github.com/winterssy/easylog) [![License](https://img.shields.io/github/license/winterssy/easylog.svg)](LICENSE)
+[![Build Status](https://github.com/winterssy/easylog/workflows/Go/badge.svg)](https://github.com/winterssy/easylog/actions) [![Go Report Card](https://goreportcard.com/badge/winterssy/easylog)](https://goreportcard.com/report/winterssy/easylog) [![GoDoc](https://godoc.org/github.com/winterssy/easylog?status.svg)](https://godoc.org/github.com/winterssy/easylog) [![License](https://img.shields.io/github/license/winterssy/easylog.svg)](LICENSE)
 
 ## Install
 
