@@ -35,9 +35,9 @@ var levels = [...]string{
 // The prefix is followed by a colon only when Llongfile or Lshortfile
 // is specified.
 // For example, flags Ldate | Ltime (or LstdFlags) produce,
-// 	2009/01/23 01:23:23 [level] message
+// 	2009-01-23 01:23:23 [level] message
 // while flags Ldate | Ltime | Lmicroseconds | Llongfile produce,
-// 	2009/01/23 01:23:23.123123 [level] /a/b/c/d.go:23: message
+// 	2009-01-23 01:23:23.123123 [level] /a/b/c/d.go:23: message
 const (
 	Ldate         = 1 << iota     // the date in the local time zone: 2009/01/23
 	Ltime                         // the time in the local time zone: 01:23:23
@@ -108,9 +108,9 @@ func (l *Logger) formatHeader(buf *[]byte, t time.Time, file string, line int, l
 		if l.flag&Ldate != 0 {
 			year, month, day := t.Date()
 			itoa(buf, year, 4)
-			*buf = append(*buf, '/')
+			*buf = append(*buf, '-')
 			itoa(buf, int(month), 2)
-			*buf = append(*buf, '/')
+			*buf = append(*buf, '-')
 			itoa(buf, day, 2)
 			*buf = append(*buf, ' ')
 		}
